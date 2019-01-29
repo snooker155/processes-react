@@ -1,14 +1,16 @@
-import IGraphVertex from "./IGraphVertex";
-import LinkedList from "../LinkedList/LinkedList";
+import { IGraphVertex } from "./IGraphVertex";
+import { LinkedList, LinkedListNode } from "../LinkedList";
+import { GraphEdge } from "../GraphEdge";
+import { AbstractVertexType } from "./AbstractVertexType";
 
-export default class GraphVertex implements IGraphVertex {
-    value: any;
-    edges: IGraphVertex[];
+export class GraphVertex<VertexType extends AbstractVertexType> implements IGraphVertex<VertexType> {
+    value: VertexType;
+    edges: LinkedList<GraphEdge<VertexType>>;
 
     /**
      * @param {*} value
      */
-    constructor(value) {
+    constructor(value: VertexType) {
         if (value === undefined) {
             throw new Error('Graph vertex must have a value');
         }
@@ -17,7 +19,7 @@ export default class GraphVertex implements IGraphVertex {
          * @param {GraphEdge} edgeA
          * @param {GraphEdge} edgeB
          */
-        const edgeComparator = (edgeA, edgeB) => {
+        const edgeComparator = (edgeA: GraphEdge<VertexType>, edgeB: GraphEdge<VertexType>): number => {
             if (edgeA.getKey() === edgeB.getKey()) {
                 return 0;
             }
@@ -28,14 +30,14 @@ export default class GraphVertex implements IGraphVertex {
         // Normally you would store string value like vertex name.
         // But generally it may be any object as well
         this.value = value;
-        this.edges = new LinkedList(edgeComparator);
+        this.edges = new LinkedList<GraphEdge<VertexType>>(edgeComparator);
     }
 
     /**
      * @param {GraphEdge} edge
      * @returns {GraphVertex}
      */
-    addEdge(edge) {
+    addEdge(edge: GraphEdge<VertexType>): GraphVertex<VertexType> {
         this.edges.append(edge);
 
         return this;
@@ -44,18 +46,18 @@ export default class GraphVertex implements IGraphVertex {
     /**
      * @param {GraphEdge} edge
      */
-    deleteEdge(edge) {
+    deleteEdge(edge: GraphEdge<VertexType>): void {
         this.edges.delete(edge);
     }
 
     /**
      * @returns {GraphVertex[]}
      */
-    getNeighbors() {
+    getNeighbors(): GraphVertex<VertexType>[] {
         const edges = this.edges.toArray();
 
         /** @param {LinkedListNode} node */
-        const neighborsConverter = (node) => {
+        const neighborsConverter = (node: LinkedListNode<GraphEdge<VertexType>>) => {
             return node.value.startVertex === this ? node.value.endVertex : node.value.startVertex;
         };
 
@@ -67,14 +69,14 @@ export default class GraphVertex implements IGraphVertex {
     /**
      * @return {GraphEdge[]}
      */
-    getEdges() {
+    getEdges(): GraphEdge<VertexType>[] {
         return this.edges.toArray().map(linkedListNode => linkedListNode.value);
     }
 
     /**
      * @return {number}
      */
-    getDegree() {
+    getDegree(): number {
         return this.edges.toArray().length;
     }
 
@@ -82,7 +84,7 @@ export default class GraphVertex implements IGraphVertex {
      * @param {GraphEdge} requiredEdge
      * @returns {boolean}
      */
-    hasEdge(requiredEdge) {
+    hasEdge(requiredEdge: GraphEdge<VertexType>): boolean {
         const edgeNode = this.edges.find({
             callback: edge => edge === requiredEdge,
         });
@@ -94,7 +96,7 @@ export default class GraphVertex implements IGraphVertex {
      * @param {GraphVertex} vertex
      * @returns {boolean}
      */
-    hasNeighbor(vertex) {
+    hasNeighbor(vertex: GraphVertex<VertexType>): boolean {
         const vertexNode = this.edges.find({
             callback: edge => edge.startVertex === vertex || edge.endVertex === vertex,
         });
@@ -106,8 +108,8 @@ export default class GraphVertex implements IGraphVertex {
      * @param {GraphVertex} vertex
      * @returns {(GraphEdge|null)}
      */
-    findEdge(vertex) {
-        const edgeFinder = (edge) => {
+    findEdge(vertex: GraphVertex<VertexType>): (GraphEdge<VertexType> | null) {
+        const edgeFinder = (edge: GraphEdge<VertexType>) => {
             return edge.startVertex === vertex || edge.endVertex === vertex;
         };
 
@@ -119,14 +121,14 @@ export default class GraphVertex implements IGraphVertex {
     /**
      * @returns {string}
      */
-    getKey() {
-        return this.value;
+    getKey(): string {
+        return typeof(this.value) === 'string' ? this.value : this.value.getKey();
     }
 
     /**
      * @return {GraphVertex}
      */
-    deleteAllEdges() {
+    deleteAllEdges(): GraphVertex<VertexType> {
         this.getEdges().forEach(edge => this.deleteEdge(edge));
 
         return this;
@@ -136,7 +138,7 @@ export default class GraphVertex implements IGraphVertex {
      * @param {function} [callback]
      * @returns {string}
      */
-    toString(callback) {
+    toString(callback: (value: any) => string): string {
         return callback ? callback(this.value) : `${this.value}`;
     }
 }

@@ -1,13 +1,13 @@
 import IComparator from "./IComparator";
 
-export default class Comparator implements IComparator {
-    compare: (a:any, b:any) => boolean;
+export class Comparator<CompareObjectType> implements IComparator<CompareObjectType> {
+    compare: (a: CompareObjectType, b: CompareObjectType) => number;
 
     /**
      * @param {function(a: *, b: *)} [compareFunction] - It may be custom compare function that, let's
      * say may compare custom objects together.
      */
-    constructor(compareFunction) {
+    constructor(compareFunction: (a: CompareObjectType, b: CompareObjectType) => number) {
         this.compare = compareFunction || Comparator.defaultCompareFunction;
     }
 
@@ -17,7 +17,7 @@ export default class Comparator implements IComparator {
      * @param {(string|number)} b
      * @returns {number}
      */
-    static defaultCompareFunction(a, b) {
+    static defaultCompareFunction(a: string|number, b: string|number) {
         if (a === b) {
             return 0;
         }
@@ -31,7 +31,7 @@ export default class Comparator implements IComparator {
      * @param {*} b
      * @return {boolean}
      */
-    equal(a, b) {
+    equal(a: CompareObjectType, b: CompareObjectType) {
         return this.compare(a, b) === 0;
     }
 
@@ -41,7 +41,7 @@ export default class Comparator implements IComparator {
      * @param {*} b
      * @return {boolean}
      */
-    lessThan(a, b) {
+    lessThan(a: CompareObjectType, b: CompareObjectType) {
         return this.compare(a, b) < 0;
     }
 
@@ -51,7 +51,7 @@ export default class Comparator implements IComparator {
      * @param {*} b
      * @return {boolean}
      */
-    greaterThan(a, b) {
+    greaterThan(a: CompareObjectType, b: CompareObjectType) {
         return this.compare(a, b) > 0;
     }
 
@@ -61,7 +61,7 @@ export default class Comparator implements IComparator {
      * @param {*} b
      * @return {boolean}
      */
-    lessThanOrEqual(a, b) {
+    lessThanOrEqual(a: CompareObjectType, b: CompareObjectType) {
         return this.lessThan(a, b) || this.equal(a, b);
     }
 
@@ -71,7 +71,7 @@ export default class Comparator implements IComparator {
      * @param {*} b
      * @return {boolean}
      */
-    greaterThanOrEqual(a, b) {
+    greaterThanOrEqual(a: CompareObjectType, b: CompareObjectType) {
         return this.greaterThan(a, b) || this.equal(a, b);
     }
 

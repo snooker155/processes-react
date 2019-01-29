@@ -1,12 +1,10 @@
-export default interface IComparator {
-    compare: (a: any, b:any) => boolean;
+export default interface IComparator<CompareObjectType> {
+    compare: (a: CompareObjectType, b: CompareObjectType) => number;
 
-    defaultCompareFunction(a: string|number, b:string|number): boolean;
-
-    equal: (a: any, b:any) => boolean;
-    lessThan: (a: any, b:any) => boolean;
-    greaterThan: (a: any, b:any) => boolean;
-    lessThanOrEqual: (a: any, b:any) => boolean;
-    greaterThanOrEqual: (a: any, b:any) => boolean;
+    equal(a: CompareObjectType, b: CompareObjectType): boolean;
+    lessThan(a: CompareObjectType, b: CompareObjectType): boolean;
+    greaterThan(a: CompareObjectType, b: CompareObjectType): boolean;
+    lessThanOrEqual(a: CompareObjectType, b: CompareObjectType): boolean;
+    greaterThanOrEqual(a: CompareObjectType, b: CompareObjectType): boolean;
     reverse(): void;
 }

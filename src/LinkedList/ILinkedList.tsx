@@ -1,23 +1,26 @@
-import ILinkedListNode from "./ILinkedListNode";
+import { Comparator } from "../Comparator";
+import { LinkedList } from "./LinkedList";
+import { LinkedListNode } from "./LinkedListNode";
+import { ILinkedListNode } from "./ILinkedListNode";
 
-type FindParams = {
-    value: any,
-    callback: Function
+export type FindParams = {
+    value?: any,
+    callback: ((value: any) => boolean) | undefined
 }
 
-export default interface ILinkedList {
-    head: ILinkedListNode | null;
-    tail: ILinkedListNode | null;
-    compare: Function;
+export interface ILinkedList<NodeType> {
+    head: ILinkedListNode<NodeType> | null;
+    tail: ILinkedListNode<NodeType> | null;
+    compare: Comparator<NodeType>;
 
-    prepend(value: any): ILinkedList;
-    append(value: any): ILinkedList;
-    delete(value: any): ILinkedListNode;
-    find(value: FindParams): ILinkedListNode;
-    deleteTail(): ILinkedListNode ;
-    deleteHead(): ILinkedListNode;
-    fromArray(values: Array<any>): ILinkedList;
-    toArray(): ILinkedListNode[];
-    toString(callback: Function): string;
-    reverse(): ILinkedList;
+    prepend(value: NodeType): LinkedList<NodeType>;
+    append(value: NodeType): LinkedList<NodeType>;
+    delete(value: NodeType): (LinkedListNode<NodeType> | null);
+    find(value: FindParams): (LinkedListNode<NodeType> | null);
+    deleteTail(): (LinkedListNode<NodeType> | null) ;
+    deleteHead(): (LinkedListNode<NodeType> | null);
+    fromArray(values: Array<NodeType>): LinkedList<NodeType>;
+    toArray(): LinkedListNode<NodeType>[];
+    toString(callback: (value: any) => string): string;
+    reverse(): LinkedList<NodeType>;
 }

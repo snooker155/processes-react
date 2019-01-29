@@ -1,22 +1,23 @@
-import IGraphVertex from "../GraphVertex/IGraphVertex";
-import IGraphEdge from "../GraphEdge/IGraphEdge";
+import {GraphVertex, IGraphVertex} from "../GraphVertex";
+import {GraphEdge, IGraphEdge} from "../GraphEdge";
+import {AbstractVertexType} from "../GraphVertex/AbstractVertexType";
 
-export default interface IGraph {
-    vertices: IGraphVertex[];
-    edges: IGraphEdge[];
+export interface IGraph<VertexType extends AbstractVertexType> {
+    vertices: Map<string, GraphVertex<VertexType>>;
+    edges: Map<string, GraphEdge<VertexType>>;
     isDirected: boolean;
 
-    addVertex(newVertex: IGraphVertex): IGraph;
-    getVertexByKey(vertexKey: string): IGraphVertex;
-    getNeighbors(vertex: IGraphVertex): IGraphVertex[];
-    getAllVertices(): IGraphVertex[];
-    getAllEdges(): IGraphEdge[];
-    addEdge(edge: IGraphEdge): IGraph;
-    deleteEdge(edge: IGraphEdge): void;
-    findEdge(startVertex: IGraphVertex, endVertex: IGraphVertex): IGraphEdge & null;
+    addVertex(newVertex: IGraphVertex<VertexType>): IGraph<VertexType>;
+    getVertexByKey(vertexKey: (VertexType | string)): (GraphVertex<VertexType> | undefined);
+    getNeighbors(vertex: IGraphVertex<VertexType>): IGraphVertex<VertexType>[];
+    getAllVertices(): IGraphVertex<VertexType>[];
+    getAllEdges(): IGraphEdge<VertexType>[];
+    addEdge(edge: IGraphEdge<VertexType>): IGraph<VertexType>;
+    deleteEdge(edge: IGraphEdge<VertexType>): void;
+    findEdge(startVertex: IGraphVertex<VertexType>, endVertex: IGraphVertex<VertexType>): IGraphEdge<VertexType> | null;
     getWeight(): number;
-    reverse(): IGraph;
+    reverse(): IGraph<VertexType>;
     getVerticesIndices(): object;
-    getAdjacencyMatrix(): any[][];
+    getAdjacencyMatrix(): Array<Array<number>>;
     toString(): string;
 }

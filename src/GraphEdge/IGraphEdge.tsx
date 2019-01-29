@@ -1,11 +1,13 @@
-import IGraphVertex from "../GraphVertex/IGraphVertex";
+import { IGraphVertex } from "../GraphVertex";
+import { GraphEdge } from "./GraphEdge";
+import { AbstractVertexType } from "../GraphVertex";
 
-export default interface IGraphEdge {
-    startVertex: IGraphVertex;
-    endVertex: IGraphVertex;
+export interface IGraphEdge<VertexType extends AbstractVertexType> {
+    startVertex: IGraphVertex<VertexType>;
+    endVertex: IGraphVertex<VertexType>;
     weight: number;
 
     getKey(): string;
-    reverse(): IGraphEdge;
-    toString(callback: Function): string;
+    reverse(): GraphEdge<VertexType>;
+    toString(callback: (value: any) => string): string;
 }

@@ -1,9 +1,10 @@
-import IGraphEdge from "./IGraphEdge";
-import IGraphVertex from "../GraphVertex/IGraphVertex";
+import { IGraphEdge } from "./IGraphEdge";
+import { IGraphVertex } from "../GraphVertex";
+import {AbstractVertexType} from "../GraphVertex";
 
-export default class GraphEdge implements IGraphEdge {
-    startVertex: IGraphVertex;
-    endVertex: IGraphVertex;
+export class GraphEdge<VertexType extends AbstractVertexType> implements IGraphEdge<VertexType> {
+    startVertex: IGraphVertex<VertexType>;
+    endVertex: IGraphVertex<VertexType>;
     weight: number;
 
     /**
@@ -11,7 +12,7 @@ export default class GraphEdge implements IGraphEdge {
      * @param {GraphVertex} endVertex
      * @param {number} [weight=1]
      */
-    constructor(startVertex, endVertex, weight = 0) {
+    constructor(startVertex: IGraphVertex<VertexType>, endVertex: IGraphVertex<VertexType>, weight = 0) {
         this.startVertex = startVertex;
         this.endVertex = endVertex;
         this.weight = weight;
@@ -20,7 +21,7 @@ export default class GraphEdge implements IGraphEdge {
     /**
      * @return {string}
      */
-    getKey() {
+    getKey(): string {
         const startVertexKey = this.startVertex.getKey();
         const endVertexKey = this.endVertex.getKey();
 
@@ -30,7 +31,7 @@ export default class GraphEdge implements IGraphEdge {
     /**
      * @return {GraphEdge}
      */
-    reverse() {
+    reverse(): GraphEdge<VertexType> {
         const tmp = this.startVertex;
         this.startVertex = this.endVertex;
         this.endVertex = tmp;
@@ -41,7 +42,7 @@ export default class GraphEdge implements IGraphEdge {
     /**
      * @return {string}
      */
-    toString() {
+    toString(): string {
         return this.getKey();
     }
 }

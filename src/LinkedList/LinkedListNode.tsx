@@ -1,14 +1,14 @@
-import ILinkedListNode from "./ILinkedListNode";
+import { ILinkedListNode } from "./ILinkedListNode";
 
-export default class LinkedListNode implements ILinkedListNode {
-    value: any;
-    next: any;
+export class LinkedListNode<NodeType> implements ILinkedListNode<NodeType> {
+    value: NodeType;
+    next: LinkedListNode<NodeType> | null;
 
     /**
      * @param {*} value
      * @param {*} next
      */
-    constructor(value: any, next = null) {
+    constructor(value: NodeType, next: (LinkedListNode<NodeType> | null) = null) {
         this.value = value;
         this.next = next;
     }
@@ -17,7 +17,7 @@ export default class LinkedListNode implements ILinkedListNode {
      * @param {function} [callback]
      * @return {string}
      */
-    toString(callback: Function) {
+    toString(callback: (value: any) => string): string {
         return callback ? callback(this.value) : `${this.value}`;
     }
 }

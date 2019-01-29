@@ -1,6 +1,6 @@
-export default interface ILinkedListNode {
-    value: any;
-    next: any;
+export interface ILinkedListNode<NodeType> {
+    value: NodeType;
+    next: ILinkedListNode<NodeType> | null;
 
-    toString(callback: Function): any;
+    toString(callback: (value: any) => string): string;
 }
