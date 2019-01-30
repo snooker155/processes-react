@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="118bda5c-6637-41c3-b1fe-e86031b0cdbc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphVertex/AbstractVertexType.tsx" afterDir="false" />
+    <list default="true" id="118bda5c-6637-41c3-b1fe-e86031b0cdbc" name="Default" comment="Add typescript support for Graph classes">
+      <change afterPath="$PROJECT_DIR$/src/Background/Background.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Background/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Background__Pattern/Background__Pattern.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Background__Pattern/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Canvas/Canvas.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Canvas/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Circle/Circle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Circle/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Defs/Defs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Defs/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphUtils/GraphUtils.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphUtils/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphVertexText/GraphVertexText.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphVertexText/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparator/Comparator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comparator/Comparator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparator/IComparator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comparator/IComparator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/Dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Dashboard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/Graph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Graph.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/IGraph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/IGraph.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphEdge/GraphEdge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphEdge/GraphEdge.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphEdge/IGraphEdge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphEdge/IGraphEdge.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GraphEdgeView/GraphEdgeView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphEdgeView/GraphEdgeView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphEdgeView/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphEdgeView/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphVertex/GraphVertex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphVertex/GraphVertex.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphVertex/IGraphVertex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphVertex/IGraphVertex.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphVertex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphVertex/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GraphVertexView/GraphVertexView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphVertexView/GraphVertexView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphVertexView/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphVertexView/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GraphView/GraphView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphView/GraphView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphView/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphView/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/ILinkedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/ILinkedList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/ILinkedListNode.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/ILinkedListNode.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedListNode.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedListNode.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,50 +39,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphView/GraphView.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dashboard/Dashboard.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GraphEdge/GraphEdge.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphEdge/IGraphEdge.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,16 +54,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Header/index.ts" />
-        <option value="$PROJECT_DIR$/src/Dashboard/index.ts" />
-        <option value="$PROJECT_DIR$/src/Dashboard/Dashboard.ts" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/Header/Header.ts" />
-        <option value="$PROJECT_DIR$/src/App.tsx" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/Dashboard/index.tsx" />
         <option value="$PROJECT_DIR$/src/Header/index.tsx" />
-        <option value="$PROJECT_DIR$/src/Header/Header.tsx" />
         <option value="$PROJECT_DIR$/src/Graph/index.ts" />
         <option value="$PROJECT_DIR$/src/GraphEdge/index.ts" />
         <option value="$PROJECT_DIR$/src/GraphVertexView/GraphVertexView.ts" />
@@ -127,24 +76,43 @@
         <option value="$PROJECT_DIR$/src/GraphVertexView/index.tsx" />
         <option value="$PROJECT_DIR$/src/Graph/Graph.tsx" />
         <option value="$PROJECT_DIR$/src/Graph/IGraph.tsx" />
-        <option value="$PROJECT_DIR$/src/GraphVertexView/GraphVertexView.tsx" />
         <option value="$PROJECT_DIR$/src/GraphView/index.tsx" />
-        <option value="$PROJECT_DIR$/src/Dashboard/Dashboard.tsx" />
-        <option value="$PROJECT_DIR$/src/GraphView/GraphView.tsx" />
-        <option value="$PROJECT_DIR$/src/GraphEdgeView/GraphEdgeView.tsx" />
         <option value="$PROJECT_DIR$/src/GraphEdgeView/index.tsx" />
         <option value="$PROJECT_DIR$/src/GraphVertex/IGraphVertex.tsx" />
         <option value="$PROJECT_DIR$/src/GraphEdge/IGraphEdge.tsx" />
         <option value="$PROJECT_DIR$/src/GraphVertex/index.tsx" />
         <option value="$PROJECT_DIR$/src/GraphEdge/GraphEdge.tsx" />
+        <option value="$PROJECT_DIR$/src/Header/Header.tsx" />
+        <option value="$PROJECT_DIR$/src/Canvas/index.tsx" />
+        <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/src/Defs/index.tsx" />
+        <option value="$PROJECT_DIR$/src/Background__Pattern/index.tsx" />
+        <option value="$PROJECT_DIR$/src/Circle/index.tsx" />
+        <option value="$PROJECT_DIR$/src/Circle/Circle.tsx" />
+        <option value="$PROJECT_DIR$/src/Dashboard/Dashboard.tsx" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/Defs/Defs.tsx" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/Background/index.tsx" />
+        <option value="$PROJECT_DIR$/src/GraphView/GraphView.tsx" />
+        <option value="$PROJECT_DIR$/src/Background/Background.tsx" />
+        <option value="$PROJECT_DIR$/src/Background__Pattern/Background__Pattern.tsx" />
+        <option value="$PROJECT_DIR$/src/Dashboard/Dashboard.scss" />
+        <option value="$PROJECT_DIR$/src/Canvas/Canvas.tsx" />
+        <option value="$PROJECT_DIR$/src/GraphVertexText/index.tsx" />
+        <option value="$PROJECT_DIR$/src/GraphVertexView/GraphVertexView.tsx" />
+        <option value="$PROJECT_DIR$/src/GraphUtils/index.tsx" />
+        <option value="$PROJECT_DIR$/src/GraphVertexText/GraphVertexText.tsx" />
+        <option value="$PROJECT_DIR$/src/GraphEdgeView/GraphEdgeView.tsx" />
+        <option value="$PROJECT_DIR$/src/GraphUtils/GraphUtils.tsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="253" />
-    <option name="y" value="-8" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="548" />
+    <option name="y" value="244" />
+    <option name="width" value="875" />
+    <option name="height" value="1655" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -165,36 +133,6 @@
               <item name="processes-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="processes-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="processes-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="processes-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="processes-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="GraphEdge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="processes-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="processes-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="GraphEdgeView" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="processes-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="processes-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="GraphVertex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="processes-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="processes-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="GraphView" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -213,6 +151,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\anzubare\WebstormProjects\processes-react\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -263,7 +202,8 @@
       <workItem from="1548768393379" duration="33000" />
       <workItem from="1548768467131" duration="6522000" />
       <workItem from="1548775833086" duration="48000" />
-      <workItem from="1548775898839" duration="1995000" />
+      <workItem from="1548775898839" duration="2289000" />
+      <workItem from="1548845468137" duration="13275000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1548715551399</created>
@@ -272,20 +212,26 @@
       <option name="project" value="LOCAL" />
       <updated>1548715551400</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add typescript support for Graph classes">
+      <created>1548777971645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548777971645</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25196000" />
+    <option name="totallyTimeSpent" value="38765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.18967333" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.14120126" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32950193" />
@@ -293,7 +239,7 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="TypeScript" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32950193" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32950193" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -308,38 +254,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Add typescript support for Graph classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add typescript support for Graph classes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2137">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-bootstrap/lib/Navbar.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-bootstrap/lib/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-bootstrap/lib/Navbar.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -367,23 +285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Header/Header.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -525,20 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphVertexView/GraphVertexView.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphEdgeView/GraphEdgeView.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphView/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -546,27 +433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphView/GraphView.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphVertex/IGraphVertex.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dashboard/Dashboard.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,6 +454,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphEdge/GraphEdge.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphEdge/IGraphEdge.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -594,10 +471,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphEdge/GraphEdge.tsx">
+    <entry file="file://$PROJECT_DIR$/src/Header/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Canvas/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Background__Pattern/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Circle/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Defs/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Circle/Circle.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Background/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dashboard/Dashboard.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphView/GraphView.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Defs/Defs.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-604">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Background__Pattern/Background__Pattern.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="77" lean-forward="true" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Background/Background.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dashboard/Dashboard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphVertexText/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphUtils/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphEdgeView/GraphEdgeView.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#242#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphUtils/GraphUtils.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphVertexText/GraphVertexText.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphVertexView/GraphVertexView.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Canvas/Canvas.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2421">
+          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@ export default class Header extends Component {
             <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href='#'>React Processes</a>
+                        <a href=''>React Processes</a>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav>
