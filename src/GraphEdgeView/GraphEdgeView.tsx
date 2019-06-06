@@ -1,4 +1,4 @@
-// import * as d3 from 'd3';
+import * as d3 from 'd3';
 // import * as lineIntersect from 'line-intersect';
 // import { intersect, shape } from 'svg-intersections';
 // import { Point2D, Matrix2D } from 'kld-affine';
